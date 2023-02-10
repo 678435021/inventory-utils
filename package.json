@@ -1,10 +1,10 @@
 {
-	"name": "<name>",
-	"description": "<dec>",
+	"name": "inventory-utils",
+	"description": "Mineflayer Inventory utils",
 	"version": "0.1.0",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/<org>/<repo>/issues"
+		"url": "https://github.com/678435021/inventory-utils/issues"
 	},
 	"keywords": [
 		"nodejs",
@@ -19,30 +19,14 @@
 	"type": "commonjs",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/<org>/<repo>.git"
+		"url": "https://github.com/678435021/inventory-utils.git"
 	},
 	"publishConfig": {
 		"access": "public"
 	},
-	"bin": {
-		"mc-term": "./dist/index.js"
-	},
 	"scripts": {
 		"build": "tsc && pkg . --compress Brotli && node ./scripts/build",
 		"pkg": "tsc; pkg . --compress Brotli"
-	},
-	"pkg": {
-		"scripts": [
-			"node_modules/axios/dist/node/axios.cjs",
-			"node_modules/vm2/lib/setup-sandbox.js",
-			"dist/builtin_plugins/*"
-		],
-		"assets": [],
-		"targets": [
-			"node18-win-x64"
-		],
-		"outputPath": "builds",
-		"compress": "Brotli"
 	},
 	"main": "./dist/index.js",
 	"dependencies": {
